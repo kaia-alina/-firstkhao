@@ -429,7 +429,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Estilos para el texto sincronizado */
+    /* Estilos para el texto sincronizado */
         .sync-text {
             opacity: 0;
             transition: opacity 1.5s ease-in-out;
@@ -439,35 +439,39 @@
             opacity: 1;
         }
 
+        /* ACTUALIZACIÓN: ESTILOS PARA MEJORAR VISIBILIDAD */
         .central-message-container h2 {
-            color: var(--deep-red);
+            color: #FFFFFF; /* Blanco brillante */
             font-family: 'Georgia', serif;
             font-style: italic;
-            font-size: 1.8rem;
+            font-size: 2.2rem; /* Más grande */
             margin: 5px 0 20px 0;
-            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+            font-weight: 800; /* Negrita extra */
+            text-shadow: 3px 3px 6px #000000, 0 0 15px rgba(0,0,0,0.8); /* Sombra negra fuerte */
         }
 
         .central-message-container p {
-            color: #555;
+            color: #FFFFFF; /* Blanco brillante */
             line-height: 1.6;
-            font-size: 1.1rem;
+            font-size: 1.4rem; /* Más grande */
             margin: 5px 0;
-            font-weight: 500;
-             text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+            font-weight: 800; /* Negrita extra */
+            text-shadow: 3px 3px 6px #000000, 0 0 15px rgba(0,0,0,0.8); /* Sombra negra fuerte */
         }
 
         .central-message-container strong {
-            color: var(--text-color);
+            color: #FFD700; /* Amarillo Oro */
+            text-decoration: underline;
         }
 
         .heart-beat {
-            color: var(--heart-red);
-            font-size: 2rem;
+            color: #FF1493; /* Rosa neón fuerte */
+            font-size: 2.5rem;
             margin-top: 20px;
             animation: pulse 1s infinite;
-            text-shadow: 0 2px 5px rgba(255, 255, 255, 0.8);
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.9); /* Sombra negra */
         }
+
 
         @keyframes pulse {
             0% { transform: scale(1); }
